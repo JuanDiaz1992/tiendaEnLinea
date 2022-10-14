@@ -1,0 +1,266 @@
+@media(max-width:1006px){
+
+
+
+
+
+
+
+/*****************************************************Nav***************/
+.container1{
+    display: none;
+}
+.container2{
+    display: none;
+}
+
+    /* este es el contenedor de los botones del menú */
+    .nav-menu{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        margin-right:20px;
+        background-color: rgba(0, 0, 0, 0.945);  
+        backdrop-filter: blur(5px);      
+        width: 100%;
+        left: 0;
+        top: 0;
+        align-items: center;
+        padding: 100px 0;
+/* este calculo determina automaticamente el alto de la página */
+        /* height: calc(100%-60px); */
+        height: 100vh;
+
+        overflow-y:auto;
+
+/* Con esta etiqueta escondemos el menú de la página principal y lo reaparecemos con la etiqueta .nav-menu_visible */
+        left: 100%;
+        transition: left 0.3s;
+        
+    }
+
+
+
+
+/* aqui definimos que el menú aparece en la posición 0 cuando lo llamemos */
+    .nav-menu_visible{
+        left: 0;
+
+    }
+
+
+
+
+    /* estos son los li del nav y controla las fuentes de los botones */
+    .nav-menu-item{
+        line-height: 70px;        
+    }
+    
+    
+    /*Este es el efecto HOVER de los botones*/
+    /*Seleccionamos los elementos A con la clase principal*/
+    .nav-menu-link{
+        padding: 8px 12px;
+        border-radius: 0px;
+    }
+    .nav-menu-link:hover,
+    .nav-menu-link_active{
+        background: none;
+        color: rgb(150, 149, 149);
+    
+    }
+    
+  
+    /* Este es el botón de moviles */
+    .nav_toggle{
+
+        z-index: 100;
+        display: block;
+    }
+
+
+
+/*****************************************************Banner***************/
+    .banner{
+        margin-top: 60px;
+    }
+    
+
+}
+
+
+
+
+
+
+
+@media(max-width:885px){
+
+    /***************************section2**********************/
+    
+    
+    .section2__div__div--articles{	
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+    
+    .section2__articles--shoes1{ grid-area: 1 / 1 / 2 / 2; }
+    .section2__articles--shoes2{ grid-area: 1 / 2 / 2 / 3; }
+    .section2__articles--shoes3{ grid-area: 1 / 3 / 2 / 4; }
+    .section2__articles--shoes4{ grid-area: 1 / 4 / 2 / 5; }
+    .section2__articles--shoes5{ grid-area: 2 / 1 / 3 / 2; }
+    
+    .section2__articles--short1{ grid-area: 2 / 2 / 3 / 3; }
+    .section2__articles--short2{ grid-area: 2 / 3 / 3 / 4; }
+    .section2__articles--short3{ grid-area: 2 / 4 / 3 / 5; }
+    .section2__articles--short4{ grid-area: 3 / 1 / 4 / 2; }
+    .section2__articles--short5{ grid-area: 3 / 2 / 4 / 3; }
+    
+    .section2__articles--others1{ grid-area: 3 / 3 / 4 / 4; }
+    .section2__articles--others2{ grid-area: 3 / 4 / 4 / 5; }
+    .section2__articles--others3{ grid-area: 4 / 1 / 5 / 2; }
+    .section2__articles--others4{ grid-area: 4 / 2 / 5 / 3; }
+    .section2__articles--others5{ grid-area: 4 / 3 / 5 / 4; }
+    
+   /***************************section4**********************/
+
+
+.section4__div__newsItems--picture{
+    display: flex;
+    justify-content: center;
+}
+
+.section4__div__newsItems {
+    flex-direction: column;
+    align-items: center;
+
+
+    
+}
+.section4__div__newsItems--text {
+    max-width: 500px;
+    width: 100%;
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+@media(max-width:659px){
+
+/***************************banner**********************/
+
+
+.Shop-Now {
+    margin-top: 20px;
+
+}
+
+.banner__div__picture--modelo1{
+    display: none;
+}
+
+.banner__div__div__textContainer {
+    width: 100%;
+}
+
+
+
+/***************************section1**********************/
+
+.section1__div{
+    width: 100%;
+}
+
+.section1{
+    flex-direction: column;
+    height: max-content;
+}
+
+
+
+
+/***************************section2**********************/
+
+
+.section2__div__div--articles{	
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.section2__articles--shoes1{ grid-area: 1 / 1 / 2 / 2; }
+.section2__articles--shoes2{ grid-area: 1 / 2 / 2 / 3; }
+.section2__articles--shoes3{ grid-area: 2 / 1 / 3 / 2; }
+.section2__articles--shoes4{ grid-area: 2 / 2 / 3 / 3; }
+.section2__articles--shoes5{ grid-area: 3 / 1 / 4 / 2; }
+
+.section2__articles--short1{ grid-area: 3 / 2 / 4 / 3; }
+.section2__articles--short2{ grid-area: 4 / 1 / 5 / 2; }
+.section2__articles--short3{ grid-area: 4 / 2 / 5 / 3; }
+.section2__articles--short4{ grid-area: 5 / 1 / 6 / 2; }
+.section2__articles--short5{ grid-area: 5 / 2 / 6 / 3; }
+
+.section2__articles--others1{ grid-area: 6 / 1 / 7 / 2; }
+.section2__articles--others2{ grid-area: 6 / 2 / 7 / 3; }
+.section2__articles--others3{ grid-area: 7 / 1 / 8 / 2; }
+.section2__articles--others4{ grid-area: 7 / 2 / 8 / 3; }
+.section2__articles--others5{ grid-area: 8 / 1 / 9 / 2;}
+
+.section2__articles__picture img{
+    max-width: 200px;}
+
+
+
+
+
+   /***************************section4**********************/
+   .section4__div__newsItems--picture{
+        width: 100%;
+        height: 100%;
+   }
+   .section4__div__newsItems--picture img{
+        max-width: 1650px;
+        width: inherit;
+
+}
+
+.section4__div__email{
+    flex-direction: column;
+}
+
+   /***************************Footer**********************/
+
+
+.footer{
+    height: 900px;
+}
+
+
+.footer__div__container2{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.footer__div__container2--text {
+    width: 80%;
+}
+
+
+
+
+}
